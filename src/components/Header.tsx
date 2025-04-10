@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,8 +62,9 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:block">
-            <Button variant="default" className="bg-aqua-blue hover:bg-aqua-blue/90">
-              Solicitar Demo
+            <Button variant="default" className="bg-aqua-blue hover:bg-aqua-blue/90 flex items-center gap-2">
+              <Download className="h-4 w-4" />
+              Descargar App
             </Button>
           </div>
 
@@ -111,10 +112,11 @@ const Header = () => {
               </a>
               <Button 
                 variant="default" 
-                className="bg-aqua-blue hover:bg-aqua-blue/90"
+                className="bg-aqua-blue hover:bg-aqua-blue/90 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Solicitar Demo
+                <Download className="h-4 w-4" />
+                Descargar App
               </Button>
             </nav>
           </div>
