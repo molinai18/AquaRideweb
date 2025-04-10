@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -21,8 +21,8 @@ const Hero = () => {
                 size="lg" 
                 className="bg-aqua-blue hover:bg-aqua-blue/90 text-white font-medium px-6"
               >
-                Comenzar Ahora
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <Download className="mr-2 h-5 w-5" />
+                Descargar App
               </Button>
               
               <Button 

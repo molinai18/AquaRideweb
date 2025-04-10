@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const CallToAction = () => {
   return (
@@ -17,9 +18,10 @@ const CallToAction = () => {
           <Button 
             size="lg" 
             variant="default"
-            className="bg-white text-aqua-blue hover:bg-white/90 font-medium px-8"
+            className="bg-white text-aqua-blue hover:bg-white/90 font-medium px-8 flex items-center"
           >
-            Solicitar Demo Gratis
+            <Download className="mr-2 h-5 w-5" />
+            Descargar App
           </Button>
           
           <Button 
